@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dijitaldeyiz — AI Destekli Kreatif &amp; Dijital Dönüşüm Stüdyosu</title>
+  <meta name="description" content="Web tasarım, AI moda çekimleri, reklam kreatifleri, video prodüksiyon, Meta reklam yönetimi ve sosyal medya yönetimi. Dijital dönüşümde sınırları kaldırıyoruz." />
+  <meta name="keywords" content="AI moda çekimi, sanal manken, web tasarım, dijital reklam, sosyal medya yönetimi, Meta reklam yönetimi, AI video prodüksiyon, yapay zekâ ajansı, dijital dönüşüm" />
+  <meta name="author" content="Dijitaldeyiz" />
+  <meta name="robots" content="index, follow" />
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Dijitaldeyiz — AI Destekli Kreatif & Dijital Dönüşüm Stüdyosu" />
+  <meta property="og:description" content="Web tasarım, AI moda çekimleri, reklam kreatifleri, video prodüksiyon, Meta reklam yönetimi ve sosyal medya yönetimi. Dijital dönüşümde sınırları kaldırıyoruz." />
+  <meta property="og:image" content="assets/dijitaldeyiz_logo.jpg" />
+  <meta property="og:locale" content="tr_TR" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Dijitaldeyiz — AI Destekli Kreatif & Dijital Dönüşüm Stüdyosu" />
+  <meta name="twitter:description" content="Yapay zekâ ve ileri teknolojiyi kreatif prodüksiyonla buluşturan yeni nesil ajans." />
+  <meta name="twitter:image" content="assets/dijitaldeyiz_logo.jpg" />
+  <!-- Theme Color -->
+  <meta name="theme-color" content="#0a0a0a" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Syne:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- Ambient Background Glow Orbs (Monks-style dynamic lighting) -->
+  <div class="dj-ambient-glow orb-1" aria-hidden="true"></div>
+  <div class="dj-ambient-glow orb-2" aria-hidden="true"></div>
+  <div class="dj-ambient-glow orb-3" aria-hidden="true"></div>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav id="navbar" class="dj-nav">
+    <div class="dj-nav-inner">
+      <a href="#home" class="dj-logo" aria-label="Dijitaldeyiz Ana Sayfa">
+        <span class="dj-logo-text">Dijitaldeyiz</span>
+      </a>
+
+      <ul class="dj-nav-links" id="navLinks">
+        <li><a href="#about" class="dj-nav-link">Hakkımızda</a></li>
+        <li><a href="#services" class="dj-nav-link">Hizmetler</a></li>
+        <li><a href="#katalog" class="dj-nav-link">AI Manken Kataloğu</a></li>
+        <li><a href="#work" class="dj-nav-link">Çalışmalar</a></li>
+        <li><a href="#contact" class="dj-nav-link">İletişim</a></li>
+      </ul>
+
+      <a href="#contact" class="dj-btn-cta" id="navCta">Projeyi Başlat</a>
+
+      <button class="dj-hamburger" id="hamburgerBtn" aria-label="Menüyü Aç">
+        <span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="dj-mobile-menu" id="mobileMenu">
+      <ul>
+        <li><a href="#about" class="dj-mob-link" data-close="true">Hakkımızda</a></li>
+        <li><a href="#services" class="dj-mob-link" data-close="true">Hizmetler</a></li>
+        <li><a href="#katalog" class="dj-mob-link" data-close="true">AI Manken Kataloğu</a></li>
+        <li><a href="#work" class="dj-mob-link" data-close="true">Çalışmalar</a></li>
+        <li><a href="#contact" class="dj-mob-link" data-close="true">İletişim</a></li>
+      </ul>
+      <a href="#contact" class="dj-btn-cta mob-cta" data-close="true">Projeyi Başlat</a>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section id="home" class="dj-hero">
+    <!-- Arka Planda Görsel ve Overlay (Monks Style) -->
+    <div class="dj-hero-bg background-visual-wrapper" data-component="h5-simple-header">
+      <img src="assets/cinematic_hero_studio.jpg" alt="Sinematik AI Stüdyo" class="dj-hero-bg-img" />
+      <div class="background-visual-overlay dj-hero-overlay"></div>
+      <div class="dj-noise"></div>
+    </div>
+
+    <!-- Arka Planda Kinetik Hareketli Yazı -->
+    <div class="dj-bg-kinetic-track hero-kinetic" aria-hidden="true">
+      <div class="dj-bg-kinetic-inner">
+        <span>DIGITAL TRANSFORMATION ✦ AI FASHION ✦ CREATIVE ENGINEERING ✦ META ADS ✦ GENERATIVE VIDEO ✦ </span>
+        <span>DIGITAL TRANSFORMATION ✦ AI FASHION ✦ CREATIVE ENGINEERING ✦ META ADS ✦ GENERATIVE VIDEO ✦ </span>
+      </div>
+    </div>
+
+    <div class="dj-hero-content">
+      <div class="dj-hero-eyebrow">
+        <span class="dj-dot"></span>
+        <span>AI-Powered Creative &amp; Tech Studio</span>
+        <span class="dj-dot"></span>
+        <span>İstanbul, TR</span>
+      </div>
+
+      <div class="dj-hero-headline-wrap">
+        <h1 class="dj-hero-headline active" id="heroTitle1">
+          Dijital Dönüşümün<br /><em>Yeni Boyutu.</em>
+        </h1>
+        <h1 class="dj-hero-headline" id="heroTitle2">
+          Fark Yaratan<br /><span class="dj-blue-word">Çözüm Odaklı</span><br />Kreatif Zekâ.
+        </h1>
+        <h1 class="dj-hero-headline" id="heroTitle3">
+          Geleceği Bugünden<br /><em>Tasarla.</em>
+        </h1>
+      </div>
+
+      <div class="dj-hero-meta">
+        <p class="dj-hero-desc">
+          Yapay zekâ ve ileri teknolojiyi kreatif prodüksiyonla buluşturan yeni nesil ajans.<br />
+          Sanal moda çekimlerinden dönüşüm odaklı web sitelerine, markanızı geleceğe taşıyoruz.
+        </p>
+
+      <div class="dj-hero-actions">
+        <a href="#services" class="dj-btn-primary" id="heroExploreCta">Hizmetleri Keşfet</a>
+        <a href="#katalog" class="dj-btn-ghost" id="heroWorkCta">
+          <span class="dj-play-icon">&#9654;</span> AI Manken Kataloğu
+        </a>
+      </div>
+    </div>
+
+    <div class="dj-scroll-hint">
+      <div class="dj-scroll-line"></div>
+      <span>Aşağı Kaydır</span>
+    </div>
+
+    <div class="dj-hero-model-card">
+      <img src="assets/hero_fashion_model.jpg" alt="AI Moda Mankeni" />
+      <div class="dj-hero-card-label">AI Sanal Manken &mdash; Dijitaldeyiz Stüdyo</div>
+    </div>
+  </section>
+
+  <!-- ========== TICKER MARQUEE ========== -->
+  <section class="dj-ticker">
+    <div class="dj-ticker-track">
+      <div class="dj-ticker-inner">
+        <span>Web Tasarım &amp; Dijital Deneyim</span><span class="dj-sep">&#10022;</span>
+        <span>AI Sanal Moda Çekimi</span><span class="dj-sep">&#10022;</span>
+        <span>Yüksek Etkili Reklam Kreatifleri</span><span class="dj-sep">&#10022;</span>
+        <span>AI Sinematik Video Prodüksiyon</span><span class="dj-sep">&#10022;</span>
+        <span>Meta &amp; Instagram Reklam Yönetimi</span><span class="dj-sep">&#10022;</span>
+        <span>Sosyal Medya &amp; Marka İletişimi</span><span class="dj-sep">&#10022;</span>
+        <span>Web Tasarım &amp; Dijital Deneyim</span><span class="dj-sep">&#10022;</span>
+        <span>AI Sanal Moda Çekimi</span><span class="dj-sep">&#10022;</span>
+        <span>Yüksek Etkili Reklam Kreatifleri</span><span class="dj-sep">&#10022;</span>
+        <span>AI Sinematik Video Prodüksiyon</span><span class="dj-sep">&#10022;</span>
+        <span>Meta &amp; Instagram Reklam Yönetimi</span><span class="dj-sep">&#10022;</span>
+        <span>Sosyal Medya &amp; Marka İletişimi</span><span class="dj-sep">&#10022;</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section id="about" class="dj-about">
+    <!-- Arka Planda Kayan Yazı -->
+    <div class="dj-bg-text-watermark" aria-hidden="true">
+      <span>INNOVATION &bull; CREATIVITY &bull; IMPACT</span>
+    </div>
+
+    <div class="dj-container">
+      <div class="dj-about-grid">
+        <div class="dj-about-left">
+          <span class="dj-section-label">Biz Kimiz?</span>
+          <h2 class="dj-section-title">
+            Sınırları Aşan<br /><em class="dj-italic">Kreatif Güç.</em>
+          </h2>
+        </div>
+        <div class="dj-about-right">
+          <p class="dj-about-body">
+            Dijitaldeyiz, yapay zekâ teknolojisini kreatif prodüksiyon ve veri stratejisiyle harmanlayan bir dijital dönüşüm stüdyosudur. Web platformlarından AI model fotoğrafçılığına, Meta reklamlarından sosyal medya yönetimine kadar markaların dijital varlığını uçtan uca inşa ediyoruz.
+          </p>
+          <p class="dj-about-body">
+            Her proje, özgün bir vizyon ve ölçülebilir sonuçlarla hayata geçirilir. Çünkü biz sadece tasarlamıyoruz &mdash; <strong>dönüştürüyoruz.</strong>
+          </p>
+          <div class="dj-stats-row">
+            <div class="dj-stat">
+              <div class="dj-stat-num" data-count="200" data-suffix="+">0</div>
+              <div class="dj-stat-label">Tamamlanan Proje</div>
+            </div>
+            <div class="dj-stat">
+              <div class="dj-stat-num" data-count="98" data-suffix="%">0</div>
+              <div class="dj-stat-label">Müşteri Memnuniyeti</div>
+            </div>
+            <div class="dj-stat">
+              <div class="dj-stat-num" data-count="50" data-suffix="+">0</div>
+              <div class="dj-stat-label">İş Ortağı Marka</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="dj-about-strip">
+      <div class="dj-strip-img">
+        <img src="assets/model_female_sportswear.jpg" alt="AI Manken Spor Giyim Çekimi" loading="lazy" />
+      </div>
+      <div class="dj-strip-img center">
+        <img src="assets/luxury_fashion_campaign.jpg" alt="Lüks Moda Kampanyası Editöryal" loading="lazy" />
+      </div>
+      <div class="dj-strip-img">
+        <img src="assets/model_male_portrait.jpg" alt="AI Erkek Manken Portre Çekimi" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SERVICES ========== -->
+  <section id="services" class="dj-services">
+    <!-- Arka Planda Çift Yönlü Kinetik Yazı Akışı (Monks Style Dynamic Typography) -->
+    <div class="dj-services-bg-kinetic" aria-hidden="true">
+      <div class="dj-kinetic-row row-left">
+        <div class="dj-kinetic-row-inner">
+          <span>WEB DESIGN ✦ AI FASHION PHOTOGRAPHY ✦ META ADS ✦ 8K ULTRA RESOLUTION ✦ BRAND STRATEGY ✦ </span>
+          <span>WEB DESIGN ✦ AI FASHION PHOTOGRAPHY ✦ META ADS ✦ 8K ULTRA RESOLUTION ✦ BRAND STRATEGY ✦ </span>
+        </div>
+      </div>
+      <div class="dj-kinetic-row row-right">
+        <div class="dj-kinetic-row-inner">
+          <span>DİJİTAL DÖNÜŞÜM ✦ SİNEMATİK VİDEO ✦ ROI OPTİMİZASYONU ✦ KREATİF MİMARİ ✦ SÜREKLİ BÜYÜME ✦ </span>
+          <span>DİJİTAL DÖNÜŞÜM ✦ SİNEMATİK VİDEO ✦ ROI OPTİMİZASYONU ✦ KREATİF MİMARİ ✦ SÜREKLİ BÜYÜME ✦ </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="dj-container">
+      <div class="dj-section-header">
+        <span class="dj-section-label light">Neler Yapıyoruz?</span>
+        <h2 class="dj-section-title light">
+          Dijital Çözümlerimiz &amp;<br /><em class="dj-italic">Hizmetlerimiz</em>
+        </h2>
+        <p class="dj-services-subtitle">
+          Markanızın ihtiyacı olan tüm dijital ve yapay zekâ kabiliyetlerini tek çatı altında sunuyoruz.
+        </p>
+      </div>
+
+      <!-- Hizmet Vurguları / Yetkinlik Şeridi (Monks-style Solution Highlights) -->
+      <div class="dj-service-highlights-bar">
+        <div class="dj-svc-hl-pill">
+          <span class="dj-hl-dot"></span>
+          <strong>%70 Maliyet Avantajı</strong> (AI Manken Çekimleri)
+        </div>
+        <div class="dj-svc-hl-pill">
+          <span class="dj-hl-dot"></span>
+          <strong>3.8x Ortalama ROAS</strong> (Meta Reklamları)
+        </div>
+        <div class="dj-svc-hl-pill">
+          <span class="dj-hl-dot"></span>
+          <strong>72 Saatte Teslimat</strong> (Kreatif Prodüksiyon)
+        </div>
+        <div class="dj-svc-hl-pill">
+          <span class="dj-hl-dot"></span>
+          <strong>8K Sinematik Kalite</strong> (Görsel &amp; Video)
+        </div>
+      </div>
+
+      <div class="dj-services-grid">
+
+        <!-- 01: Web Tasarım -->
+        <article class="dj-svc-card" id="svc-web" data-index="01">
+          <div class="dj-svc-header-row">
+            <div class="dj-svc-num">01</div>
+            <div class="dj-svc-badges">
+              <span class="dj-badge-tag">UI / UX</span>
+              <span class="dj-badge-tag">Dönüşüm</span>
+            </div>
+          </div>
+          <div class="dj-svc-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="4" y="8" width="40" height="32" rx="4" stroke="currentColor" stroke-width="2"/>
+              <path d="M4 16h40" stroke="currentColor" stroke-width="2"/>
+              <circle cx="11" cy="12" r="2" fill="currentColor"/>
+              <circle cx="18" cy="12" r="2" fill="currentColor"/>
+              <path d="M14 28l5 4 10-10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="dj-svc-title">Web Tasarım &amp; Dijital Deneyim</h3>
+          <p class="dj-svc-desc">Modern, ultra hızlı ve markanıza özel web platformları. Ziyaretçileri müşteriye dönüştüren, estetik ve kusursuz kullanıcı deneyimleri inşa ediyoruz.</p>
+          <div class="dj-svc-features">
+            <span>✓ Özel UI/UX Tasarım</span>
+            <span>✓ %99+ Hız &amp; SEO Optimizasyonu</span>
+            <span>✓ Mobil &amp; Masaüstü Kusursuz Uyum</span>
+          </div>
+          <a href="#contact" class="dj-svc-link">Hizmeti Keşfet <span>&#8594;</span></a>
+          <div class="dj-svc-thumb">
+            <img src="assets/cinematic_hero_studio.jpg" alt="Web Tasarım ve Dijital Deneyim" loading="lazy" />
+          </div>
+        </article>
+
+        <!-- 02: AI Moda & Sanal Manken -->
+        <article class="dj-svc-card dj-svc-card--dark" id="svc-ai-model" data-index="02">
+          <div class="dj-svc-header-row">
+            <div class="dj-svc-num">02</div>
+            <div class="dj-svc-badges">
+              <span class="dj-badge-tag">8K Ultra AI</span>
+              <span class="dj-badge-tag">Moda &amp; E-Ticaret</span>
+            </div>
+          </div>
+          <div class="dj-svc-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="16" r="8" stroke="currentColor" stroke-width="2"/>
+              <path d="M24 24C14 24 6 28 6 36" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M24 24C34 24 42 28 42 36" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="36" cy="36" r="6" fill="none" stroke="#29b6ff" stroke-width="2"/>
+              <path d="M34 36l2 2 4-4" stroke="#29b6ff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="dj-svc-title">AI Moda &amp; Sanal Manken Çekimleri</h3>
+          <p class="dj-svc-desc">Fiziksel stüdyo maliyetlerine son. Kıyafet ve aksesuarlarınızı dilediğiniz ten rengi, saç stili ve mekânda gerçekçi yapay zekâ mankenleriyle fotoğraflıyoruz.</p>
+          <div class="dj-svc-features">
+            <span>✓ Stüdyo &amp; Model Masrafsız</span>
+            <span>✓ Sınırsız Mekân &amp; Işık Seçeneği</span>
+            <span>✓ E-Ticaret &amp; Sosyal Medyaya Hazır</span>
+          </div>
+          <a href="#katalog" class="dj-svc-link">Kataloğu İncele <span>&#8594;</span></a>
+          <div class="dj-svc-thumb">
+            <img src="assets/hero_fashion_model.jpg" alt="AI Moda Çekimi ve Sanal Manken" loading="lazy" />
+          </div>
+        </article>
+
+        <!-- 03: AI Reklam & Kreatif İçerik -->
+        <article class="dj-svc-card" id="svc-ad" data-index="03">
+          <div class="dj-svc-header-row">
+            <div class="dj-svc-num">03</div>
+            <div class="dj-svc-badges">
+              <span class="dj-badge-tag">Yüksek Tıklanma</span>
+              <span class="dj-badge-tag">A/B Testi</span>
+            </div>
+          </div>
+          <div class="dj-svc-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 32L20 20l8 8 12-16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <rect x="4" y="4" width="40" height="40" rx="4" stroke="currentColor" stroke-width="2"/>
+              <circle cx="40" cy="8" r="4" fill="#29b6ff"/>
+            </svg>
+          </div>
+          <h3 class="dj-svc-title">AI Reklam &amp; Kreatif İçerik Üretimi</h3>
+          <p class="dj-svc-desc">Markanız için yüksek tıklama ve satın alma getiren reklam görselleri ve kampanya kreatifleri. AI destekli yaratıcılıkla rakiplerinizin önüne geçin.</p>
+          <div class="dj-svc-features">
+            <span>✓ Dikkat Çekici Hook Tasarımları</span>
+            <span>✓ Çoklu Format (Story, Feed, Reel)</span>
+            <span>✓ Veriye Dayalı Kreatif Varyasyonlar</span>
+          </div>
+          <a href="#contact" class="dj-svc-link">Hizmeti Keşfet <span>&#8594;</span></a>
+          <div class="dj-svc-thumb">
+            <img src="assets/luxury_fashion_campaign.jpg" alt="AI Reklam ve Kampanya Kreatifleri" loading="lazy" />
+          </div>
+        </article>
+
+        <!-- 04: AI Video Prodüksiyon -->
+        <article class="dj-svc-card dj-svc-card--accent" id="svc-video" data-index="04">
+          <div class="dj-svc-header-row">
+            <div class="dj-svc-num">04</div>
+            <div class="dj-svc-badges">
+              <span class="dj-badge-tag">Sinematik 4K</span>
+              <span class="dj-badge-tag">Generative AI</span>
+            </div>
+          </div>
+          <div class="dj-svc-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="4" y="12" width="32" height="24" rx="4" stroke="currentColor" stroke-width="2"/>
+              <path d="M36 20l8-6v20l-8-6V20z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+              <circle cx="20" cy="24" r="6" fill="none" stroke="#29b6ff" stroke-width="2"/>
+              <path d="M18 24l4-2v4l-4-2z" fill="#29b6ff"/>
+            </svg>
+          </div>
+          <h3 class="dj-svc-title">AI Video &amp; Sinematik Animasyon</h3>
+          <p class="dj-svc-desc">Fikirlerinizi akıcı, etkileyici ve sinematik videolara dönüştürüyoruz. Sosyal medya ve reklam kampanyaları için stüdyo kalitesinde AI video prodüksiyonu.</p>
+          <div class="dj-svc-features">
+            <span>✓ Dinamik Kamera Açıları</span>
+            <span>✓ Profesyonel Ses &amp; Efekt Tasarımı</span>
+            <span>✓ Viral Odaklı Kurgu &amp; Ritim</span>
+          </div>
+          <a href="#contact" class="dj-svc-link">Hizmeti Keşfet <span>&#8594;</span></a>
+          <div class="dj-svc-thumb">
+            <img src="assets/cinematic_hero_studio.jpg" alt="AI Video Prodüksiyon ve Animasyon" loading="lazy" />
+          </div>
+        </article>
+
+        <!-- 05: Meta Reklam Yönetimi -->
+        <article class="dj-svc-card" id="svc-meta" data-index="05">
+          <div class="dj-svc-header-row">
+            <div class="dj-svc-num">05</div>
+            <div class="dj-svc-badges">
+              <span class="dj-badge-tag">Meta Partner</span>
+              <span class="dj-badge-tag">ROAS Odaklı</span>
+            </div>
+          </div>
+          <div class="dj-svc-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24 8C15 8 8 15 8 24s7 16 16 16 16-7 16-16S33 8 24 8z" stroke="currentColor" stroke-width="2"/>
+              <path d="M24 8v32M8 24h32" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M12 15c3 4 7 6 12 6s9-2 12-6M12 33c3-4 7-6 12-6s9 2 12 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="dj-svc-title">Meta Reklam Yönetimi &amp; Büyüme</h3>
+          <p class="dj-svc-desc">Facebook ve Instagram reklamlarınızı kitle hedefleme, yaratıcı optimizasyon ve gelişmiş piksel/CAPI entegrasyonuyla yöneterek yatırım getirinizi katlıyoruz.</p>
+          <div class="dj-svc-features">
+            <span>✓ Gelişmiş CAPI &amp; Dönüşüm Kurulumu</span>
+            <span>✓ Günlük Optimizasyon &amp; Raporlama</span>
+            <span>✓ Ölçeklenebilir Bütçe Stratejisi</span>
+          </div>
+          <a href="#contact" class="dj-svc-link">Hizmeti Keşfet <span>&#8594;</span></a>
+          <div class="dj-svc-thumb">
+            <img src="assets/model_pink_tshirt.jpg" alt="Meta Reklam Yönetimi ve Büyüme" loading="lazy" />
+          </div>
+        </article>
+
+        <!-- 06: Sosyal Medya Yönetimi -->
+        <article class="dj-svc-card dj-svc-card--dark" id="svc-social" data-index="06">
+          <div class="dj-svc-header-row">
+            <div class="dj-svc-num">06</div>
+            <div class="dj-svc-badges">
+              <span class="dj-badge-tag">Topluluk</span>
+              <span class="dj-badge-tag">Etkileşim</span>
+            </div>
+          </div>
+          <div class="dj-svc-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="24" r="5" stroke="currentColor" stroke-width="2"/>
+              <circle cx="36" cy="12" r="5" stroke="currentColor" stroke-width="2"/>
+              <circle cx="36" cy="36" r="5" stroke="currentColor" stroke-width="2"/>
+              <path d="M17 22l14-8M17 26l14 8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="36" cy="12" r="2" fill="#29b6ff"/>
+              <circle cx="36" cy="36" r="2" fill="#29b6ff"/>
+            </svg>
+          </div>
+          <h3 class="dj-svc-title">Sosyal Medya Yönetimi &amp; İletişim</h3>
+          <p class="dj-svc-desc">İçerik takvimi, estetik görsel dil, düzenli planlama ve etkileşim stratejisini uçtan uca yürütüyoruz. Markanız ile hedef kitleniz arasında güçlü bağlar kuruyoruz.</p>
+          <div class="dj-svc-features">
+            <span>✓ Aylık İçerik Takvimi &amp; Üretimi</span>
+            <span>✓ Trend ve Algoritma Uyumu</span>
+            <span>✓ Düzenli Büyüme Analitiği</span>
+          </div>
+          <a href="#contact" class="dj-svc-link">Hizmeti Keşfet <span>&#8594;</span></a>
+          <div class="dj-svc-thumb">
+            <img src="assets/model_black_dress.jpg" alt="Sosyal Medya Yönetimi ve İletişim" loading="lazy" />
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== AI MANKEN KATALOĞU (ULTRA LÜKS) ========== -->
+  <section id="katalog" class="dj-katalog">
+    <!-- Arka Planda Kinetik Şerit -->
+    <div class="dj-bg-kinetic-track katalog-kinetic" aria-hidden="true">
+      <div class="dj-bg-kinetic-inner">
+        <span>COUTURE RUNWAY ✦ VIRTUAL EDITORIAL ✦ 8K LUXURY AI MODELS ✦ HIGH-FASHION LOOKBOOK ✦ GLOBAL CASTING ✦ </span>
+        <span>COUTURE RUNWAY ✦ VIRTUAL EDITORIAL ✦ 8K LUXURY AI MODELS ✦ HIGH-FASHION LOOKBOOK ✦ GLOBAL CASTING ✦ </span>
+      </div>
+    </div>
+
+    <div class="dj-container">
+      <div class="dj-section-header">
+        <span class="dj-section-label light">AI Sanal Moda Stüdyosu</span>
+        <h2 class="dj-section-title light">
+          Sanal Manken &amp;<br /><em class="dj-italic">Lookbook Kataloğu</em>
+        </h2>
+        <p class="dj-katalog-sub">
+          Gerçek stüdyo çekimi kalitesinde yapay zekâ destekli manken ve ürün fotoğrafçılığı.<br />
+          Her koleksiyona uygun yüz tipleri, doğal pozlar ve sınırsız ışık kurguları.
+        </p>
+      </div>
+    </div>
+
+    <!-- Büyük Öne Çıkan Hero Manken -->
+    <div class="dj-katalog-hero">
+      <div class="dj-katalog-hero-img">
+        <img src="assets/luxury_fashion_campaign.jpg" alt="Lüks Moda Kampanyası AI Manken Çekimi" />
+        <div class="dj-katalog-hero-tag">
+          <span class="dj-tag-dot"></span>
+          Vogue Düzeyi Editöryal Çekim
+        </div>
+      </div>
+      <div class="dj-katalog-hero-info">
+        <div class="dj-kat-badge">ÖZEL KOLEKSİYON &bull; LOOKBOOK 2026</div>
+        <h3 class="dj-kat-hero-title">Lüks Moda<br /><em>Editöryal Çekimi</em></h3>
+        <p class="dj-kat-hero-desc">
+          Yüksek moda markaları için Vogue standartlarında editöryal görsel üretimi. Her kare, bir moda dergisi kapağı kadar kusursuz detaylara ve sanatsal derinliğe sahiptir.
+        </p>
+        <div class="dj-kat-tags">
+          <span class="dj-kat-tag">Lüks Moda</span>
+          <span class="dj-kat-tag">Editöryal Işık</span>
+          <span class="dj-kat-tag">Couture Seri</span>
+          <span class="dj-kat-tag">8K Ultra Çözünürlük</span>
+        </div>
+        <a href="#contact" class="dj-btn-primary dj-kat-cta">Bu Paketi İncele &amp; Teklif Al &#8594;</a>
+      </div>
+    </div>
+
+    <!-- Manken Grid Kataloğu -->
+    <div class="dj-katalog-grid">
+
+      <!-- Katalog 01 -->
+      <div class="dj-kat-item dj-kat-item--tall" id="kat-1">
+        <div class="dj-kat-img-wrap">
+          <img src="assets/hero_fashion_model.jpg" alt="AI Editöryal Manken" loading="lazy" />
+          <div class="dj-kat-overlay">
+            <div class="dj-kat-overlay-content">
+              <span class="dj-kat-cat">Editöryal Moda</span>
+              <h4>Premium Denim &amp; Stil</h4>
+              <p>Markanızın koleksiyonları için stüdyo kalitesinde gerçekçi yapay zekâ görsel prodüksiyonu.</p>
+            </div>
+          </div>
+        </div>
+        <div class="dj-kat-meta">
+          <div class="dj-kat-meta-left">
+            <span class="dj-kat-num">LOOK — 01</span>
+            <h4>Editöryal AI Manken</h4>
+          </div>
+          <div class="dj-kat-quality">
+            <span class="dj-kat-ql">8K ULTRA</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Katalog 02 -->
+      <div class="dj-kat-item" id="kat-2">
+        <div class="dj-kat-img-wrap">
+          <img src="assets/model_female_sportswear.jpg" alt="Spor Giyim AI Manken" loading="lazy" />
+          <div class="dj-kat-overlay">
+            <div class="dj-kat-overlay-content">
+              <span class="dj-kat-cat">Spor &amp; Athleisure</span>
+              <h4>Spor Giyim Koleksiyonu</h4>
+              <p>Dinamik pozlar ve enerji dolu atmosferlerle aktif spor markaları için özel çekim kurgusu.</p>
+            </div>
+          </div>
+        </div>
+        <div class="dj-kat-meta">
+          <div class="dj-kat-meta-left">
+            <span class="dj-kat-num">LOOK — 02</span>
+            <h4>Spor Giyim Mankeni</h4>
+          </div>
+          <div class="dj-kat-quality">
+            <span class="dj-kat-ql">4K PRO</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Katalog 03 -->
+      <div class="dj-kat-item" id="kat-3">
+        <div class="dj-kat-img-wrap">
+          <img src="assets/model_black_dress.jpg" alt="Gece Koleksiyonu AI Manken" loading="lazy" />
+          <div class="dj-kat-overlay">
+            <div class="dj-kat-overlay-content">
+              <span class="dj-kat-cat">Gece Modası &amp; Abiye</span>
+              <h4>Gece Koleksiyonu</h4>
+              <p>Abiye ve gece kıyafetleri için dramatik sinematik aydınlatmalı lüks görsel serisi.</p>
+            </div>
+          </div>
+        </div>
+        <div class="dj-kat-meta">
+          <div class="dj-kat-meta-left">
+            <span class="dj-kat-num">LOOK — 03</span>
+            <h4>Gece Koleksiyonu</h4>
+          </div>
+          <div class="dj-kat-quality">
+            <span class="dj-kat-ql">8K ULTRA</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Katalog 04 -->
+      <div class="dj-kat-item dj-kat-item--tall" id="kat-4">
+        <div class="dj-kat-img-wrap">
+          <img src="assets/model_male_portrait.jpg" alt="Erkek Manken AI Portre" loading="lazy" />
+          <div class="dj-kat-overlay">
+            <div class="dj-kat-overlay-content">
+              <span class="dj-kat-cat">Erkek Modası</span>
+              <h4>Erkek Portre &amp; Stil</h4>
+              <p>Maskülen ve sofistike erkek koleksiyonları için prestijli AI fotoğraf prodüksiyonu.</p>
+            </div>
+          </div>
+        </div>
+        <div class="dj-kat-meta">
+          <div class="dj-kat-meta-left">
+            <span class="dj-kat-num">LOOK — 04</span>
+            <h4>Erkek Portre Çekimi</h4>
+          </div>
+          <div class="dj-kat-quality">
+            <span class="dj-kat-ql">4K PRO</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Katalog 05 -->
+      <div class="dj-kat-item dj-kat-item--wide" id="kat-5">
+        <div class="dj-kat-img-wrap">
+          <img src="assets/cinematic_hero_studio.jpg" alt="Sinematik AI Stüdyo" loading="lazy" />
+          <div class="dj-kat-overlay">
+            <div class="dj-kat-overlay-content">
+              <span class="dj-kat-cat">Video &amp; Sinematik</span>
+              <h4>Sinematik Stüdyo Prodüksiyonu</h4>
+              <p>Film kalitesinde hareketli görsel anlatım ve yapay zekâ video prodüksiyon hizmeti.</p>
+            </div>
+          </div>
+        </div>
+        <div class="dj-kat-meta">
+          <div class="dj-kat-meta-left">
+            <span class="dj-kat-num">LOOK — 05</span>
+            <h4>Sinematik Stüdyo</h4>
+          </div>
+          <div class="dj-kat-quality">
+            <span class="dj-kat-ql">8K HDR</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Katalog 06 -->
+      <div class="dj-kat-item" id="kat-6">
+        <div class="dj-kat-img-wrap">
+          <img src="assets/model_pink_tshirt.jpg" alt="Günlük Giyim AI Manken" loading="lazy" />
+          <div class="dj-kat-overlay">
+            <div class="dj-kat-overlay-content">
+              <span class="dj-kat-cat">Günlük &amp; Casual</span>
+              <h4>Günlük Giyim Koleksiyonu</h4>
+              <p>Rahat ve şık sokak modası koleksiyonları için canlı, enerjik ve doğal AI çekimi.</p>
+            </div>
+          </div>
+        </div>
+        <div class="dj-kat-meta">
+          <div class="dj-kat-meta-left">
+            <span class="dj-kat-num">LOOK — 06</span>
+            <h4>Casual Koleksiyon</h4>
+          </div>
+          <div class="dj-kat-quality">
+            <span class="dj-kat-ql">4K PRO</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Katalog CTA Bandı -->
+    <div class="dj-katalog-cta-section">
+      <div class="dj-katalog-cta-inner">
+        <div class="dj-katalog-cta-text">
+          <h3>Markanıza Özel Sanal Manken Çekimi Başlatalım</h3>
+          <p>Kendi ürünlerinizi stüdyoya sokmadan yapay zekâ ile profesyonelce fotoğraflayın. 24 saat içinde markanıza özel demo ve teklif hazırlayalım.</p>
+        </div>
+        <a href="#contact" class="dj-btn-primary" id="katalogContactCta">Ücretsiz Demo &amp; Teklif İste &#8594;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== WORK / PORTFOLYO ========== -->
+  <section id="work" class="dj-work">
+    <div class="dj-container">
+      <div class="dj-section-header">
+        <span class="dj-section-label">Seçili Portfolyo</span>
+        <h2 class="dj-section-title">
+          İmza Attığımız<br /><em class="dj-italic">Başarı Hikâyeleri</em>
+        </h2>
+      </div>
+    </div>
+
+    <div class="dj-work-grid">
+      <div class="dj-work-item dj-work-item--large" id="work-1">
+        <img src="assets/luxury_fashion_campaign.jpg" alt="Lüks Moda Kampanyası" loading="lazy" />
+        <div class="dj-work-info">
+          <div>
+            <span class="dj-work-cat">AI Moda Çekimi &amp; Kampanya</span>
+            <h3>Lüks Moda Editöryal Serisi</h3>
+          </div>
+          <span class="dj-work-arrow">&#8599;</span>
+        </div>
+      </div>
+      <div class="dj-work-item" id="work-2">
+        <img src="assets/hero_fashion_model.jpg" alt="Editöryal AI Manken" loading="lazy" />
+        <div class="dj-work-info">
+          <div>
+            <span class="dj-work-cat">AI Sanal Model</span>
+            <h3>Editöryal Denim Kampanyası</h3>
+          </div>
+          <span class="dj-work-arrow">&#8599;</span>
+        </div>
+      </div>
+      <div class="dj-work-item" id="work-3">
+        <img src="assets/model_male_portrait.jpg" alt="Erkek Koleksiyonu" loading="lazy" />
+        <div class="dj-work-info">
+          <div>
+            <span class="dj-work-cat">AI Ürün Fotoğrafçılığı</span>
+            <h3>Erkek Premium Koleksiyonu</h3>
+          </div>
+          <span class="dj-work-arrow">&#8599;</span>
+        </div>
+      </div>
+      <div class="dj-work-item" id="work-4">
+        <img src="assets/model_black_dress.jpg" alt="Gece Koleksiyonu" loading="lazy" />
+        <div class="dj-work-info">
+          <div>
+            <span class="dj-work-cat">AI Kreatif Kampanya</span>
+            <h3>Gece &amp; Abiye Koleksiyonu</h3>
+          </div>
+          <span class="dj-work-arrow">&#8599;</span>
+        </div>
+      </div>
+      <div class="dj-work-item dj-work-item--wide" id="work-5">
+        <img src="assets/cinematic_hero_studio.jpg" alt="Sinematik Stüdyo" loading="lazy" />
+        <div class="dj-work-info">
+          <div>
+            <span class="dj-work-cat">AI Video Prodüksiyonu</span>
+            <h3>Sinematik Marka Tanıtım Filmi</h3>
+          </div>
+          <span class="dj-work-arrow">&#8599;</span>
+        </div>
+      </div>
+      <div class="dj-work-item" id="work-6">
+        <img src="assets/model_female_sportswear.jpg" alt="Spor Koleksiyonu" loading="lazy" />
+        <div class="dj-work-info">
+          <div>
+            <span class="dj-work-cat">AI Spor &amp; Lifestyle</span>
+            <h3>Athleisure Spor Koleksiyonu</h3>
+          </div>
+          <span class="dj-work-arrow">&#8599;</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="dj-work-cta-wrap">
+      <a href="#contact" class="dj-btn-outline" id="workContactCta">Projenizi Birlikte Konuşalım &#8594;</a>
+    </div>
+  </section>
+
+  <!-- ========== SHOWREEL SECTION ========== -->
+  <section class="dj-reel">
+    <div class="dj-reel-bg">
+      <img src="assets/model_pink_tshirt.jpg" alt="Showreel Arka Planı" loading="lazy" />
+      <div class="dj-reel-overlay"></div>
+    </div>
+    <div class="dj-reel-content">
+      <span class="dj-section-label light">Sinematik Showreel</span>
+      <h2 class="dj-reel-title">Yaratıcılık<br /><em class="dj-italic">Hareketle Hayat Bulur.</em></h2>
+      <button class="dj-reel-play" id="reelPlayBtn" aria-label="Tanıtım Filmini İzle">
+        <div class="dj-play-circle">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M8 5v14l11-7z"/>
+          </svg>
+        </div>
+        <span>Tanıtım Filmini İzle</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- ========== WHY US ========== -->
+  <section class="dj-why">
+    <div class="dj-container">
+      <div class="dj-section-header">
+        <span class="dj-section-label">Neden Dijitaldeyiz?</span>
+        <h2 class="dj-section-title">
+          Fark Yaratan<br /><em class="dj-italic">Kabileyetlerimiz</em>
+        </h2>
+      </div>
+
+      <div class="dj-why-grid">
+        <div class="dj-why-card" id="why-1">
+          <div class="dj-why-icon">&#9889;</div>
+          <h3>Önce Yapay Zekâ (AI-First)</h3>
+          <p>Her iş akışına en güncel AI modellerini entegre ederek daha hızlı, yüksek ölçekli ve bütçe dostu çıktılar sağlıyoruz.</p>
+        </div>
+        <div class="dj-why-card" id="why-2">
+          <div class="dj-why-icon">&#127919;</div>
+          <h3>Ölçülebilir Sonuç Odaklılık</h3>
+          <p>Yalnızca estetik değil, doğrudan satış ve dönüşüm sağlayan projeler tasarlıyoruz. Başarımızı verilerle ölçüyoruz.</p>
+        </div>
+        <div class="dj-why-card" id="why-3">
+          <div class="dj-why-icon">&#128640;</div>
+          <h3>Sürat &amp; Çeviklik</h3>
+          <p>Geleneksel ajansların haftalarca beklettiği süreçleri günlere indiriyor; markanızın büyüme hızına hız katıyoruz.</p>
+        </div>
+        <div class="dj-why-card" id="why-4">
+          <div class="dj-why-icon">&#127912;</div>
+          <h3>Özgün Kreatif Vizyon</h3>
+          <p>Kalıp şablonlar kullanmıyoruz. Markanızın ruhunu yansıtan, özgün ve akılda kalıcı görsel kimlikler inşa ediyoruz.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TESTIMONIALS ========== -->
+  <section class="dj-testimonials">
+    <div class="dj-container">
+      <span class="dj-section-label light">Mutlu İş Ortaklarımız</span>
+      <h2 class="dj-section-title light">Markalar<br /><em class="dj-italic">Bizi Anlatıyor</em></h2>
+
+      <div class="dj-testi-slider">
+        <div class="dj-testi-card active" id="testi-1">
+          <blockquote>
+            "Dijitaldeyiz ekibi, AI sanal manken çekimleri ile e-ticaret fotoğrafçılığımızı baştan yarattı. Çekim maliyetlerimiz ciddi oranda azaldı, görsellerimiz ise uluslararası lüks markalar düzeyine ulaştı."
+          </blockquote>
+          <div class="dj-testi-author">
+            <div class="dj-testi-avatar">MK</div>
+            <div>
+              <strong>Mehmet Kaya</strong>
+              <span>Kurucu Ortak &mdash; ModaHouse</span>
+            </div>
+          </div>
+        </div>
+        <div class="dj-testi-card" id="testi-2">
+          <blockquote>
+            "Meta reklam yönetimimizi devraldıktan sonra dönüşüm oranlarımız beklentilerimizin çok üzerine çıktı. Veriye dayalı kreatif kurguları ile büyümemize büyük hız kattılar."
+          </blockquote>
+          <div class="dj-testi-author">
+            <div class="dj-testi-avatar">AY</div>
+            <div>
+              <strong>Ayşe Yıldız</strong>
+              <span>Pazarlama Direktörü &mdash; TrendBrand</span>
+            </div>
+          </div>
+        </div>
+        <div class="dj-testi-card" id="testi-3">
+          <blockquote>
+            "Yeni web platformumuz 2 hafta gibi rekor bir sürede yayına alındı. Modern arayüzü ve hızı sayesinde organik trafiğimizde %150 artış sağladık."
+          </blockquote>
+          <div class="dj-testi-author">
+            <div class="dj-testi-avatar">CA</div>
+            <div>
+              <strong>Can Arslan</strong>
+              <span>Genel Müdür &mdash; StartupX</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="dj-testi-dots">
+        <button class="dj-testi-dot active" data-slide="0" aria-label="Görüş 1"></button>
+        <button class="dj-testi-dot" data-slide="1" aria-label="Görüş 2"></button>
+        <button class="dj-testi-dot" data-slide="2" aria-label="Görüş 3"></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section id="contact" class="dj-contact">
+    <div class="dj-contact-bg">
+      <img src="assets/model_female_sportswear.jpg" alt="İletişim Arka Planı" loading="lazy" />
+      <div class="dj-contact-overlay"></div>
+    </div>
+
+    <div class="dj-container dj-contact-inner">
+      <div class="dj-contact-left">
+        <span class="dj-section-label light">İletişime Geçin</span>
+        <h2 class="dj-contact-title">
+          Projenizi<br /><em class="dj-italic">Hayata</em><br />Geçirelim.
+        </h2>
+        <p class="dj-contact-desc">
+          Markanızı dijitalde bir adım öne taşımaya hazır mısınız? Ücretsiz keşif ve strateji görüşmesi için bize ulaşın &mdash; en geç 24 saat içinde size özel bir planla dönüş yapıyoruz.
+        </p>
+        <div class="dj-contact-details">
+          <a href="mailto:bilgi@dijitaldeyiz.com.tr" class="dj-contact-link" id="contactEmail">
+            <span class="dj-contact-icon"><svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></span> bilgi@dijitaldeyiz.com.tr
+          </a>
+          <a href="https://wa.me/905000000000" class="dj-contact-link" id="contactWhatsapp" target="_blank" rel="noopener noreferrer">
+            <span class="dj-contact-icon"><svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></span> WhatsApp ile Hızlı İletişim
+          </a>
+          <a href="https://www.instagram.com/dijitaldeyiznet?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" class="dj-contact-link" id="contactInstagram" target="_blank" rel="noopener noreferrer">
+            <span class="dj-contact-icon"><svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></span> Instagram
+          </a>
+        </div>
+      </div>
+
+      <div class="dj-contact-right">
+        <form id="contactForm" class="dj-form" action="https://formsubmit.co/bilgi@dijitaldeyiz.com.tr" method="POST">
+          <!-- FormSubmit Configuration -->
+          <input type="hidden" name="_subject" value="Dijitaldeyiz Web Sitesinden Yeni Bir Talep Var!">
+          <input type="hidden" name="_captcha" value="false">
+          
+          <div class="dj-form-group">
+            <label for="formName">Ad Soyad / Firma Adı</label>
+            <input type="text" id="formName" name="name" placeholder="Marka veya İsminiz" required />
+          </div>
+          <div class="dj-form-group">
+            <label for="formEmail">E-Posta Adresi</label>
+            <input type="email" id="formEmail" name="email" placeholder="ornek@marka.com" required />
+          </div>
+          <div class="dj-form-group">
+            <label for="formService">İlgilendiğiniz Hizmet</label>
+            <select id="formService" name="service">
+              <option value="Tümü">Tüm Hizmetler & Genel Bilgi</option>
+              <option value="Web Tasarım">Web Tasarım & Dijital Deneyim</option>
+              <option value="AI Manken">AI Sanal Moda Çekimi</option>
+              <option value="Video">Sinematik Video Prodüksiyon</option>
+              <option value="Meta">Meta & Instagram Reklamları</option>
+              <option value="Sosyal Medya">Sosyal Medya Yönetimi</option>
+            </select>
+          </div>
+          <div class="dj-form-group">
+            <label for="formMsg">Proje Detayları</label>
+            <textarea id="formMsg" name="message" rows="4" placeholder="Kısaca ihtiyaçlarınızdan bahsedin..."></textarea>
+          </div>
+          <button type="submit" class="dj-btn-submit" id="formSubmitBtn">Talebi Gönder</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="dj-footer">
+    <div class="dj-container">
+      <div class="dj-footer-top">
+        <div class="dj-footer-brand">
+          <h3 class="dj-footer-logo-text">Dijitaldeyiz</h3>
+          <p>Yapay zekâ ve ileri teknolojiyi kullanarak markalar için geleceğin dijital deneyimlerini inşa ediyoruz.</p>
+        </div>
+        <div class="dj-footer-links">
+          <div class="dj-footer-col">
+            <h4>Hizmetler</h4>
+            <ul>
+              <li><a href="#services">Web Tasarım &amp; UX</a></li>
+              <li><a href="#katalog">AI Sanal Manken Çekimi</a></li>
+              <li><a href="#services">AI Reklam Kreatifleri</a></li>
+              <li><a href="#services">AI Sinematik Video</a></li>
+              <li><a href="#services">Meta Reklam Yönetimi</a></li>
+              <li><a href="#services">Sosyal Medya İletişimi</a></li>
+            </ul>
+          </div>
+          <div class="dj-footer-col">
+            <h4>Kurumsal</h4>
+            <ul>
+              <li><a href="#about">Biz Kimiz?</a></li>
+              <li><a href="#work">Portfolyo</a></li>
+              <li><a href="#contact">İletişim &amp; Teklif</a></li>
+            </ul>
+          </div>
+          <div class="dj-footer-col">
+            <h4>Sosyal Medya</h4>
+            <ul>
+              <li><a href="https://www.instagram.com/dijitaldeyiznet?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+              <li><a href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="#" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="#" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="dj-footer-bottom">
+        <p>&copy; 2026 Dijitaldeyiz. Tüm hakları saklıdır.</p>
+        <p class="dj-footer-tag">Yapay Zekâ &amp; Kreatif Vizyon ile Geliştirildi &#10022;</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Video Modal -->
+  <div class="dj-video-modal" id="videoModal" role="dialog" aria-modal="true" aria-label="Tanıtım Videosu">
+    <div class="dj-modal-backdrop" id="modalBackdrop"></div>
+    <div class="dj-modal-inner">
+      <button class="dj-modal-close" id="modalClose" aria-label="Kapat">&#10005;</button>
+      <div class="dj-modal-video-wrap">
+        <div class="dj-modal-placeholder">
+          <div class="dj-modal-icon">&#9654;</div>
+          <p>Tanıtım filmimiz çok yakında yayında!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
