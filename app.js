@@ -26,24 +26,19 @@ function initNavbar() {
   const nav = document.getElementById('navbar');
   if (!nav) return;
 
-  let ticking = false;
-
   const update = () => {
     const y = window.scrollY;
     if (y > 60) {
       nav.classList.add('scrolled');
+      nav.classList.remove('over-dark');
     } else {
       nav.classList.remove('scrolled');
+      nav.classList.add('over-dark');
     }
-    ticking = false;
   };
 
-  window.addEventListener('scroll', () => {
-    if (!ticking) {
-      requestAnimationFrame(update);
-      ticking = true;
-    }
-  }, { passive: true });
+  update();
+  window.addEventListener('scroll', update, { passive: true });
 }
 
 /* ─── MOBILE MENU ────────────────────────────────────────────────────── */
@@ -106,7 +101,31 @@ function initScrollReveal() {
 /* ─── HERO HEADLINES CYCLE ─────────────────────────────────────────────────── */
 function initHeroHeadlines() {
   const titles = document.querySelectorAll('.dj-hero-headline');
+  const wrap = document.querySelector('.dj-hero-headline-wrap');
   if (titles.length < 2) return;
+
+  const syncWrapHeight = () => {
+    if (!wrap) return;
+    let maxHeight = 0;
+    titles.forEach(t => {
+      // Temporarily ensure accurate measurement even when inactive
+      const prevOpacity = t.style.opacity;
+      const prevVis = t.style.visibility;
+      t.style.visibility = 'hidden';
+      t.style.opacity = '0';
+      const h = t.offsetHeight;
+      if (h > maxHeight) maxHeight = h;
+      t.style.visibility = prevVis;
+      t.style.opacity = prevOpacity;
+    });
+    if (maxHeight > 0) {
+      wrap.style.minHeight = `${Math.ceil(maxHeight)}px`;
+    }
+  };
+
+  syncWrapHeight();
+  window.addEventListener('resize', syncWrapHeight, { passive: true });
+  setTimeout(syncWrapHeight, 200);
 
   let currentIndex = 0;
   setInterval(() => {
@@ -119,8 +138,9 @@ function initHeroHeadlines() {
       titles[currentIndex].classList.remove('exiting');
       currentIndex = (currentIndex + 1) % titles.length;
       titles[currentIndex].classList.add('active');
+      syncWrapHeight();
     }, 500); // 500ms match with CSS exiting transition
-  }, 4000); // cycle every 4 seconds
+  }, 4500); // cycle every 4.5 seconds
 }
 
 /* ─── KINETIC SCROLL PARALLAX ────────────────────────────────────────── */
